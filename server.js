@@ -39,6 +39,13 @@ res.render('about.hbs',{
 });
 });
 
+app.get('/project',(req,res)=>{
+//  res.send('<h1>About Page</h1>')
+res.render('projects.hbs',{
+  pagetitle: 'projects Page',
+  //currentYear: new Date().getFullYear()
+});
+});
 app.get('/bad',(req,res)=>{
   res.send({
     error:'page not found'
